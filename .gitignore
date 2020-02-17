@@ -8,8 +8,7 @@
 # testing
 /coverage
 
-# production
-/build
+/estilosscsshergilrau
 
 # misc
 .DS_Store
