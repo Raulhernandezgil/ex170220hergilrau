@@ -3,11 +3,12 @@ class Distribucion1hergilrau extends Component{
     render(){
         return(
 
-            <div className="contenedorEj1hergilrau">
-                <div><a href="Distribucion1hergilrau.js">Distribucion 1</a></div>
-                <div><a href="Distribucion2hergilrau.js">Distribucion 2</a></div>
-                <div><a href="Distribucion3hergilrau.js">Distribucion 3</a></div>
-                <div><a href="Pruebashergilrau.js">Distribucion 4</a></div>
+            <div className="contenedorEj2hergilrau">
+                <header>Cabecera</header>
+                <aside className="barraIzhergilrau">Barra Lateral Izquierda</aside>
+                <article>Articulo</article>
+                <aside className="barraDehergilrau">Barra Lateral Derecha</aside>
+                <footer>Pie</footer>
                 
             </div>
         )
