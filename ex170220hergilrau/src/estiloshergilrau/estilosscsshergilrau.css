@@ -1,0 +1,56 @@
+/* Ejercicio 1 */
+div {
+  width: 100%;
+}
+
+.contenedorEj1hergilrau {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contenedorEj1hergilrau > div {
+  padding: 20px;
+  border: 3px solid black;
+}
+@media (min-width: 650px) {
+  .contenedorEj1hergilrau {
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+  }
+}
+
+/* Ejercicio 2 */
+.contenedorEj2hergilrau {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: repeat(3, 150px);
+  grid-gap: 1em;
+}
+.contenedorEj2hergilrau > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedorEj2hergilrau > header, .contenedorEj2hergilrau footer {
+  grid-column: 1/4;
+}
+.contenedorEj2hergilrau > header, .contenedorEj2hergilrau aside, .contenedorEj2hergilrau article, .contenedorEj2hergilrau footer {
+  color: honeydew;
+  background-color: grey;
+  padding: 1em;
+}
+@media (max-width: 700px) {
+  .contenedorEj2hergilrau aside, .contenedorEj2hergilrau article {
+    grid-column: 1/4;
+  }
+}
+
+body {
+  margin: 0 auto;
+  max-width: 56em;
+  padding: 1em 0;
+}
+
+/*# sourceMappingURL=estilosscsshergilrau.css.map */
