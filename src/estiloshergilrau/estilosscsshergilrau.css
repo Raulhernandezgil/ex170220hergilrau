@@ -1,0 +1,121 @@
+/* Ejercicio 1 */
+div {
+  width: 100%;
+}
+
+.contenedorEj1hergilrau {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contenedorEj1hergilrau > div {
+  padding: 20px;
+  border: 3px solid black;
+}
+@media (min-width: 650px) {
+  .contenedorEj1hergilrau {
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+  }
+}
+
+/* Ejercicio 2 */
+.contenedorEj2hergilrau {
+  display: grid;
+  grid-template-columns: 20% auto 20%;
+  grid-template-rows: repeat(3, 150px 300px);
+  grid-gap: 1em;
+}
+.contenedorEj2hergilrau > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedorEj2hergilrau > header, .contenedorEj2hergilrau footer {
+  grid-column: 1/4;
+}
+.contenedorEj2hergilrau > header, .contenedorEj2hergilrau aside, .contenedorEj2hergilrau article, .contenedorEj2hergilrau footer {
+  color: honeydew;
+  background-color: grey;
+  padding: 1em;
+}
+@media (max-width: 700px) {
+  .contenedorEj2hergilrau aside, .contenedorEj2hergilrau article {
+    grid-column: 1/4;
+  }
+}
+
+body {
+  margin: 0 auto;
+  max-width: 56em;
+  padding: 1em 0;
+}
+
+/* Ejercicio 3 */
+.contenedorEj3hergilrau {
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-template-rows: repeat(3, 150px 300px);
+  grid-gap: 1em;
+}
+.contenedorEj3hergilrau > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedorEj3hergilrau > header, .contenedorEj3hergilrau footer {
+  grid-column: 1/3;
+}
+.contenedorEj3hergilrau > header, .contenedorEj3hergilrau aside, .contenedorEj3hergilrau main, .contenedorEj3hergilrau footer {
+  color: honeydew;
+  background-color: grey;
+  padding: 1em;
+}
+.contenedorEj3hergilrau > main img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .contenedorEj3hergilrau aside, .contenedorEj3hergilrau main {
+    grid-column: 1/3;
+  }
+  .contenedorEj3hergilrau main img {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* Ejercicio 4 */
+img {
+  width: 250px;
+}
+
+.contenedorEj4hergilrau {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: repeat(3, 100px 100px);
+  grid-gap: 1em;
+}
+.contenedorEj4hergilrau > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1280px) and (min-width: 600px) {
+  .contenedorEj4hergilrau {
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(4, 100px 100px);
+  }
+}
+@media (max-width: 600px) {
+  .contenedorEj4hergilrau {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(8, 100px 100px);
+  }
+}
+
+/*# sourceMappingURL=estilosscsshergilrau.css.map */
