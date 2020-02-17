@@ -21,6 +21,7 @@ class Aplicacionhergilrau extends Component{
                 
                 </div>
                 <br></br>
+                <br></br>
                 <div id="dist1hergilrau"><Distribucion1hergilrau/></div>
                 <br></br>
                 <div id="dist2hergilrau"><Distribucion2hergilrau/></div>
